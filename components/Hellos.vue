@@ -3,7 +3,6 @@
     <h1>{{ msg }}</h1>
    <li><a href="http://localhost:8080/#/"> 退回上一页</a></li>
     <h2>Ecosystem</h2>
-   
   </div>
 </template>
 
@@ -20,6 +19,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
 h1, h2 {
   font-weight: normal;
 }

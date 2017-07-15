@@ -1,9 +1,10 @@
-<template>
+
+<template>  
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
-      <li><a href="http://localhost:8080/#/s" >跳转到下一页</a></li>
+      <li><a href="http://localhost:8080/#/s" @click="show = !show" >跳转到下一页</a></li>
       <li><a href="https://forum.vuejs.org" target="_blank">Forum</a></li>
       <li><a href="https://gitter.im/vuejs/vue" target="_blank">Gitter Chat</a></li>
       <li><a href="https://twitter.com/vuejs" target="_blank">Twitter</a></li>
@@ -19,7 +20,6 @@
     </ul>
   </div>
 </template>
-
 <script>
 export default {
   name: 'hello',
@@ -50,4 +50,23 @@ li {
 a {
   color: #42b983;
 }
+
+.bounce-enter-active {
+  animation: bounce-in .5s;
+}
+.bounce-leave-active {
+  animation: bounce-in .5s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 </style>
